@@ -1,0 +1,23 @@
+{
+  "framework": "lifelines",
+  "concordance_index": 0.849221571915403,
+  "n_rows": 33768,
+  "predictors": {
+    "numeric": [
+      "age",
+      "sex_bin",
+      "married_bin"
+    ],
+    "categorical": [
+      "income4",
+      "breslow_cat",
+      "ulceration_std",
+      "mitotic_cat",
+      "T_cat",
+      "N_cat",
+      "surg3",
+      "radiation_bin",
+      "chemo_bin"
+    ]
+  }
+}

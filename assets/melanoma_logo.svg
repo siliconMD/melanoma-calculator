@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="2048" viewBox="0 0 1024 1024">
+  <title>Melanoma Detection Logo – Magnifying Lens Only</title>
+  <defs>
+    <radialGradient id="glass" cx="40%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#fffefb" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#f4d0b0" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#222"/>
+      <stop offset="100%" stop-color="#111"/>
+    </linearGradient>
+    <linearGradient id="highlight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- White background -->
+  
+
+  <!-- Magnifying lens only (no handle) -->
+  <g filter="url(#shadow)">
+    <!-- Outer rim -->
+    <circle cx="512" cy="512" r="340" fill="url(#rim)"/>
+    <!-- Inner glass -->
+    <circle cx="512" cy="512" r="300" fill="url(#glass)" stroke="#0f0f0f" stroke-width="6"/>
+    <!-- Subtle glare -->
+    <path d="M292,382 A250,250 0 0 1 482,272" fill="none" stroke="url(#highlight)" stroke-width="22" stroke-linecap="round"/>
+
+    <!-- Mole -->
+    <g id="mole">
+      <path d="M 412 412
+               C 447 372, 527 367, 572 397
+               C 612 424, 652 472, 637 522
+               C 624 567, 587 602, 552 624
+               C 508 652, 460 650, 424 627
+               C 390 605, 370 567, 382 522
+               C 395 475, 387 444, 412 412 Z"
+            fill="#4a2b22"/>
+      <path d="M 482 442
+               C 507 424, 557 432, 582 457
+               C 607 482, 604 519, 580 538
+               C 556 557, 515 557, 494 540
+               C 473 523, 460 460, 482 442 Z"
+            fill="#2a1a17" opacity="0.9"/>
+      <path d="M 447 552
+               C 472 537, 507 545, 527 565
+               C 547 585, 540 612, 515 622
+               C 490 632, 462 619, 450 600
+               C 438 581, 432 564, 447 552 Z"
+            fill="#6b3a2e" opacity="0.9"/>
+      <circle cx="577" cy="572" r="7" fill="#2a1a17" opacity="0.85"/>
+      <circle cx="502" cy="492" r="9" fill="#2a1a17" opacity="0.9"/>
+    </g>
+  </g>
+</svg>
