@@ -1,8 +1,8 @@
 numpy==1.26.4
+scipy==1.11.4
 scikit-learn==1.4.2
 interpret==0.6.5
-scipy==1.16.2
-joblib==1.4.2
 pandas==2.2.2
-lifelines==0.30.0
+joblib==1.4.2
 streamlit==1.38.0
+lifelines==0.30.0
