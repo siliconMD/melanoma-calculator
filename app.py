@@ -15,22 +15,6 @@ ART_DIR   = ROOT / "artifacts"          # <- metastasis + prognosis artifacts bo
 # --------- Page config ----------
 st.set_page_config(page_title="Melanoma Calculator", page_icon=str(TITLE_ICON), layout="centered")
 
-with st.sidebar.expander("⚙️ Environment versions"):
-    import sklearn, numpy, pandas, joblib, scipy, importlib
-    def ver(m): 
-        try: return importlib.import_module(m).__version__
-        except: return "not installed"
-    st.write({
-        "scikit-learn": sklearn.__version__,
-        "numpy": numpy.__version__,
-        "pandas": pandas.__version__,
-        "joblib": joblib.__version__,
-        "scipy": scipy.__version__,
-        "interpret": ver("interpret"),
-        "lifelines": ver("lifelines"),
-        "streamlit": ver("streamlit"),
-    })
-
 # --------- Load metastasis model + schema + thresholds ----------
 MODEL_BUNDLE = joblib.load(ART_DIR / "metastasis_pipeline.joblib")
 PIPE       = MODEL_BUNDLE["pipeline"]
