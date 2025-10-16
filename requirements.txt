@@ -4,5 +4,5 @@ scikit-learn==1.4.2
 interpret==0.6.5
 pandas==2.2.2
 joblib==1.4.2
-streamlit==1.38.0
-lifelines==0.30.0
+streamlit==1.38
+lifelines==0.30
