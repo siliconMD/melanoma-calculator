@@ -164,7 +164,7 @@ left, right = st.columns([1, 6], vertical_alignment="center")
 with left:
     st.image(str(TITLE_ICON), width=96)
 with right:
-    st.title("Melanoma Distant Metastasis and Prognostic Calculator")
+    st.title("Distant Melanoma Metastasis and Prognosis Calculator")
 st.caption("Research/education purposes only")
 
 with st.expander("About this tool"):
