@@ -359,7 +359,7 @@ with tabs[2]:
         "confusion matrices show performance at selected sensitivity operating points."
     )
     st.image(str(FIGS / "Fig2_SHAP_Force.png"), use_column_width=True,
-             caption="Example SHAP/force plot (idx 22)")
+             caption="SHAP Plots")
     st.markdown("### Nomogram (Overall Survival)")
     st.image(str(FIGS / "Fig3_Nomogram.png"), use_column_width=True,
              caption="Nomogram: 1-, 3-, 5-year Overall Survival")
